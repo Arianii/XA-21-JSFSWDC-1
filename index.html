@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Embedded CSS -->
+    <!-- <style rel="stylesheet" type="text/css">
+        body {
+            background-color: #e5e5e5;
+        }
+    </style> -->
+</head>
+<!-- Inline CSS -->
+ <!-- style="background-color: #e5e5e5" -->
+<body>
+    <div id="header-wrapper">
+        <header id="site-header" class="container">
+            <div id="logo">
+                <a href="/">
+                    <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
+                    ShiteSot.com
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="">Kategorite</a>
+                <a href="">Qyteti</a>
+                <a href="">Rreth Nesh</a>
+                <a href="">Kontakti</a>
+            </nav>
+            <div class="float-right">
+                <a href="publiko.html">Publio Shpallje</a>
+            </div>
+        </header>
+        <div id="search-filters" class="container">
+            <form action="publish" method="GET">
+                <div class="field-keyword">
+                    <label for="keyword">Kërko
+                        <input id="keyword" type="text" name="keyword"
+                        placeholder="Search for anything">
+                    </label>
+                </div>
+                <div class="field-category">
+                    <label for="category">Në</label>
+                    <select name="category" id="category">
+                        <option value="automjete">Automjete</option>
+                        <option value="patundshmeni">Patundshmeni</option>
+                        <option value="gjo-te-gjalla">Gjo t'gjalla</option>
+                    </select>
+                </div>
+                <div class="field-city">
+                    <label for="city">Qyteti</label>
+                    <select name="city" id="city">
+                        <option value="prishtina">Prishtina</option>
+                        <option value="prizren">Prizren</option>
+                        <option value="peja">Peja</option>
+                    </select>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Gjeje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
