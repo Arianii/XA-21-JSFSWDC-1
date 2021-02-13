@@ -47,6 +47,15 @@ a[href='http'] {
     color: darkblue;
 }
 
+.main-nav a {
+    color: #444;
+    margin-right: 20px;
+}
+
+.main-nav a:hover {
+    color: #f00;
+}
+
 .main-nav a:last-child {
-    color: red;
+    margin-right: 0;
 }
