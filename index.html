@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Embedded CSS -->
@@ -18,52 +19,126 @@
  <!-- style="background-color: #e5e5e5" -->
 <body>
     <div id="header-wrapper">
-        <header id="site-header" class="container">
-            <div id="logo">
-                <a href="/">
-                    <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
-                    ShiteSot.com
-                </a>
-            </div>
-            <nav class="main-nav">
-                <a href="categories">Kategorite</a>
-                <a href="cities">Qyteti</a>
-                <a href="about">Rreth Nesh</a>
-                <a href="contact">Kontakti</a>
-            </nav>
-            <div class="float-right">
-                <a href="publiko.html">Publio Shpallje</a>
+        <header class="container" id="site-header">
+            <div class="row">
+                <div class="col-9">
+                    <div id="logo">
+                        <a href="/">
+                            <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
+                            ShiteSot.com
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <a href="categories">Kategorite</a>
+                        <a href="cities">Qyteti</a>
+                        <a href="about">Rreth Nesh</a>
+                        <a href="contact">Kontakti</a>
+                    </nav>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        <a href="publiko.html" class="btn btn-lg btn-outline-danger">Publiko Shpallje</a>
+                    </div>
+                </div>
             </div>
         </header>
         <div id="search-filters" class="container">
-            <form action="publish" method="GET">
-                <div class="field-keyword">
-                    <label for="keyword">Kërko
-                        <input id="keyword" type="text" name="keyword"
-                        placeholder="Search for anything">
-                    </label>
+            <form action="publish" method="GET" class="row">
+                <div class="col">
+                    <div class="row align-items-center">
+                        <label for="keyword" class="col-2 form-label text-danger fw-bold">Kërko</label>
+                        <div class="col-sm-10">
+                            <input id="keyword" type="text" name="keyword"
+                                placeholder="Search for anything"
+                                class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="field-category">
+                <div class="col field-category">
                     <label for="category">Në</label>
-                    <select name="category" id="category">
+                    <select class="form-select" name="category" id="category">
                         <option value="automjete">Automjete</option>
                         <option value="patundshmeni">Patundshmeni</option>
                         <option value="gjo-te-gjalla">Gjo t'gjalla</option>
                     </select>
                 </div>
-                <div class="field-city">
+                <div class="col field-city">
                     <label for="city">Qyteti</label>
-                    <select name="city" id="city">
+                    <select class="form-select" name="city" id="city">
                         <option value="prishtina">Prishtina</option>
                         <option value="prizren">Prizren</option>
                         <option value="peja">Peja</option>
                     </select>
                 </div>
-                <div class="form-submit">
+                <div class="col form-submit">
                     <button type="submit">Gjeje</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <main class="container" id="main-content">
+        <div class="row">
+            <div class="col-9">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  <div class="col">
+    <div class="card bg-success">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-info">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-danger">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-warning">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-dark text-white">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card bg-secondary">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <div class="col">Sidebar</div>
+        </div>
+    </main>
 </body>
 </html>

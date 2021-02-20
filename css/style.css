@@ -1,5 +1,5 @@
 body {
-    background-color: #bada55;
+    background-color: rgb(246, 246, 246);
     /*font-size: 100px;*/
     font-family: sans-serif;
     margin: 0;
@@ -25,17 +25,21 @@ px, %, pt, em, rem, vh, vw
     background-color: white;
 }
 
-.container {
-    width:  960px;
-    margin: 0 auto;
-}
-
 a {
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+#site-header {
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;*/
 }
 
 #logo a {
@@ -58,4 +62,34 @@ a[href='http'] {
 
 .main-nav a:last-child {
     margin-right: 0;
+}
+
+.btn-publish {
+    color: #f00;
+    border: 2px solid  #f00;
+    padding: 10px 30px;
+    border-radius: 4px;
+    /* https://cubic-bezier.com */
+    transition: all .3s ease;
+    text-transform: uppercase;
+}
+.btn-publish:hover {
+    padding: 20px 40px;
+    text-decoration: none;
+    background-color: rgba(255, 0, 0, .1);
+}
+
+#search-filters {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#search-filters form {
+    display: flex;
+}
+
+#search-filters form label {
+    /* color: #f00; */
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
 }
