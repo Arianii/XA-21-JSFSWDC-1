@@ -1,143 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Embedded CSS -->
-    <!-- <style rel="stylesheet" type="text/css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Embedded CSS -->
+        <!-- <style rel="stylesheet" type="text/css">
         body {
-            background-color: #e5e5e5;
+        background-color: #e5e5e5;
         }
-    </style> -->
-</head>
-<!-- Inline CSS -->
- <!-- style="background-color: #e5e5e5" -->
-<body>
-    <div id="header-wrapper">
-        <header class="container" id="site-header">
-            <div class="row">
-                <div class="col-9">
-                    <div id="logo">
-                        <a href="/">
-                            <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
-                            ShiteSot.com
-                        </a>
+        </style> -->
+    </head>
+    <!-- Inline CSS -->
+    <!-- style="background-color: #e5e5e5" -->
+    <body>
+        <div id="header-wrapper">
+            <header class="container" id="site-header">
+                <div class="row">
+                    <div class="col-9">
+                        <div id="logo">
+                            <a href="/">
+                                <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
+                                ShiteSot.com
+                            </a>
+                        </div>
+                        <nav class="main-nav">
+                            <a href="categories">Kategorite</a>
+                            <a href="cities">Qyteti</a>
+                            <a href="about">Rreth Nesh</a>
+                            <a href="contact">Kontakti</a>
+                        </nav>
                     </div>
-                    <nav class="main-nav">
-                        <a href="categories">Kategorite</a>
-                        <a href="cities">Qyteti</a>
-                        <a href="about">Rreth Nesh</a>
-                        <a href="contact">Kontakti</a>
-                    </nav>
-                </div>
-                <div class="col">
-                    <div class="float-right">
-                        <a href="publiko.html" class="btn btn-lg btn-outline-danger">Publiko Shpallje</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div id="search-filters" class="container">
-            <form action="publish" method="GET" class="row">
-                <div class="col">
-                    <div class="row align-items-center">
-                        <label for="keyword" class="col-2 form-label text-danger fw-bold">Kërko</label>
-                        <div class="col-sm-10">
-                            <input id="keyword" type="text" name="keyword"
-                                placeholder="Search for anything"
-                                class="form-control">
+                    <div class="col">
+                        <div class="float-right">
+                            <a href="publiko.html" class="btn btn-lg btn-outline-danger">Publiko Shpallje</a>
                         </div>
                     </div>
                 </div>
-                <div class="col field-category">
-                    <label for="category">Në</label>
-                    <select class="form-select" name="category" id="category">
-                        <option value="automjete">Automjete</option>
-                        <option value="patundshmeni">Patundshmeni</option>
-                        <option value="gjo-te-gjalla">Gjo t'gjalla</option>
-                    </select>
-                </div>
-                <div class="col field-city">
-                    <label for="city">Qyteti</label>
-                    <select class="form-select" name="city" id="city">
-                        <option value="prishtina">Prishtina</option>
-                        <option value="prizren">Prizren</option>
-                        <option value="peja">Peja</option>
-                    </select>
-                </div>
-                <div class="col form-submit">
-                    <button type="submit">Gjeje</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <main class="container" id="main-content">
-        <div class="row">
-            <div class="col-9">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-  <div class="col">
-    <div class="card bg-success">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card bg-info">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card bg-danger">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card bg-warning">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card bg-dark text-white">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card bg-secondary">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+            </header>
+            <div id="search-filters" class="container">
+                <form action="publish" method="GET" class="row">
+                    <div class="col">
+                        <div class="row align-items-center">
+                            <label for="keyword" class="col-2 form-label text-danger fw-bold">Kërko</label>
+                            <div class="col-sm-10">
+                                <input id="keyword" type="text" name="keyword"
+                                placeholder="Search for anything"
+                                class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col field-category">
+                        <label for="category">Në</label>
+                        <select class="form-select" name="category" id="category">
+                            <option value="automjete">Automjete</option>
+                            <option value="patundshmeni">Patundshmeni</option>
+                            <option value="gjo-te-gjalla">Gjo t'gjalla</option>
+                        </select>
+                    </div>
+                    <div class="col field-city">
+                        <label for="city">Qyteti</label>
+                        <select class="form-select" name="city" id="city">
+                            <option value="prishtina">Prishtina</option>
+                            <option value="prizren">Prizren</option>
+                            <option value="peja">Peja</option>
+                        </select>
+                    </div>
+                    <div class="col form-submit">
+                        <button type="submit">Gjeje</button>
+                    </div>
+                </form>
             </div>
-            <div class="col">Sidebar</div>
+        </div>
+        <main class="container" id="main-content">
+            <div class="row">
+                <div class="col-9">
+                    <div class="card-group">
+                        <div class="card bg-success">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-laptop"></i>
+                                Elektronikë
+                                </h5>
+                                <p class="card-text">
+                                </p>
+                                <ul class="list-unstyled ps-3">
+                                    <li>
+                                        Vetura
+                                        <ul>
+                                            <li>Mercedes</li>
+                                        </ul>
+                                    </li>
+                                    <li>Traktora</li>
+                                    <li>Bagera</li>
+                                    <li>Motoçikleta</li>
+                                    <li>Biçikleta</li>
+                                    <li>Koço Kokedhima</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card bg-info">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-car"></i>
+                                Automjete
+                                </h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-danger">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-home"></i>
+                                Patundshmëri
+                                </h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-group">
+                        <div class="card bg-warning">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-suitcase"></i>
+                                Oferta Pune
+                                </h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark text-white">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-baby"></i>
+                                Shtëpi &amp; Familje
+                                </h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary">
+                            <div class="card-body py-5 px-4">
+                                <h5 class="card-title">
+                                <i class="fas fa-tags"></i>
+                                Tjera
+                                </h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">Sidebar</div>
+            </div>
         </div>
     </main>
 </body>

@@ -93,3 +93,11 @@ a[href='http'] {
     /* text-transform: uppercase; */
     /* font-weight: bold; */
 }
+
+.card {
+    color: white;
+}
+
+.card .card-title {
+    text-transform: uppercase;
+}
