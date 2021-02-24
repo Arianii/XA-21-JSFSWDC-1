@@ -101,3 +101,12 @@ a[href='http'] {
 .card .card-title {
     text-transform: uppercase;
 }
+
+
+.ad-content {
+
+}
+
+.ad-content .ad-info h3 > small {
+    font-size: 13px;
+}
