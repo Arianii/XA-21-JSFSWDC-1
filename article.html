@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-wrapper">
+        <header class="container" id="site-header">
+            <div class="row">
+                <div class="col-9">
+                    <div id="logo">
+                        <a href="/">
+                            <!-- <img src="logo.png" alt="ShiteSot Logo"> -->
+                            ShiteSot.com
+                        </a>
+                    </div>
+                    <nav class="main-nav">
+                        <a href="categories">Kategorite</a>
+                        <a href="cities">Qyteti</a>
+                        <a href="about">Rreth Nesh</a>
+                        <a href="contact">Kontakti</a>
+                    </nav>
+                </div>
+                <div class="col">
+                    <div class="float-right">
+                        <a href="publiko.html" class="btn btn-lg btn-outline-danger">Publiko Shpallje</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="search-filters" class="container">
+            <form action="publish" method="GET" class="row">
+                <div class="col">
+                    <div class="row align-items-center">
+                        <label for="keyword" class="col-2 form-label text-danger fw-bold">Kërko</label>
+                        <div class="col-sm-10">
+                            <input id="keyword" type="text" name="keyword"
+                            placeholder="Search for anything"
+                            class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col field-category">
+                    <label for="category">Në</label>
+                    <select class="form-select" name="category" id="category">
+                        <option value="automjete">Automjete</option>
+                        <option value="patundshmeni">Patundshmeni</option>
+                        <option value="gjo-te-gjalla">Gjo t'gjalla</option>
+                    </select>
+                </div>
+                <div class="col field-city">
+                    <label for="city">Qyteti</label>
+                    <select class="form-select" name="city" id="city">
+                        <option value="prishtina">Prishtina</option>
+                        <option value="prizren">Prizren</option>
+                        <option value="peja">Peja</option>
+                    </select>
+                </div>
+                <div class="col form-submit">
+                    <button type="submit">Gjeje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <main class="container py-5" id="main-content">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row bg-info">
+                    <div class="col-md-9">
+                        <article class="ad-content">
+                            <header class="ad-info">
+                                <h3 class="text-danger border-bottom pb-2">Automjete
+                                    <small class="text-muted">250 artikuj</small>
+                                </h3>
+                                <span class="text-muted">
+                                    24 Mars, 2021 |
+                                    Shitet nga: Ismet Peja |
+                                    Vendi: Prizren
+                                </span>
+                            </header>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="ad-title w-75">
+                                    Shitet Vetura Mercedes Benz UKL 4.0
+                                </h4>
+                                <span class="ad-price text-end">
+                                    Çmimi<br>
+                                    <span class="text-danger fw-bold fs-4">12,000€</span>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col" id="featured-ads">featured</div>
+                </div>
+            </div>
+            <div class="col">Sidebar</div>
+        </div>
+    </main>
+    <div id="footer-wrapper" class="bg-white py-4">
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h5 class="fw-bold mb-3">ShiteSot.com</h5>
+                    <p class="mb-3">Menyra me e lehte dhe me e shpejte per<br> te shitur
+                    ate qe do dhe per te blere ate qe te duhet.</p>
+                    <p class="text-secondary">
+                        Te gjitha te drejtat e rezevuara &copy; 2021 <br>
+                        <a href="/privacy-policy" class="text-secondary">Privacy Policy</a>
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Kategorite</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="">Elektronike</a>
+                        </li>
+                        <li>
+                            <a href="">Automjete</a>
+                        </li>
+                        <li>
+                            <a href="">Shtepi dhe Familje</a>
+                        </li>
+                        <li>
+                            <a href="">Oferta pune</a>
+                        </li>
+                        <li>
+                            <a href="">Patundshmeri</a>
+                        </li>
+                        <li>
+                            <a href="">Tjera</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Viset Shqiptare</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="">Kosove</a>
+                        </li>
+                        <li>
+                            <a href="">Lugine</a>
+                        </li>
+                        <li>
+                            <a href="">Shqiperi</a>
+                        </li>
+                        <li>
+                            <a href="">Maqedoni</a>
+                        </li>
+                        <li>
+                            <a href="">Mali i Zi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>Pyetje te Shpeshta</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="" class="text-secondary">A</a></li>
+                        <li><a href="" class="text-secondary">B</a></li>
+                        <li><a href="">C</a></li>
+                        <li><a href="">D</a></li>
+                        <li><a href="">E</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
